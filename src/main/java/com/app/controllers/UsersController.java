@@ -30,11 +30,6 @@ public class UsersController {
         return "users/showUser";
     }
 
-//    @GetMapping()
-//    public String getUserForId (@RequestMapping(value = "id", defaultValue = "1") int id, Model model) {
-//
-//    }
-
     @GetMapping("/new")
     public String newUesr(Model model) {
         model.addAttribute("user", new Users());
